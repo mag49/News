@@ -39,5 +39,5 @@ def stories(source_id):
     '''
 
     story_source = get_stories(source_id)
-    title = f'{source_id}| Stories'
+    title = '{source_id}| Stories'
     return render_template('stories.html',title = title, name = source_id, news = story_source )

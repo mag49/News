@@ -50,8 +50,8 @@ def process_results(news_list):
         url = news_item.get('url')
 
         
-            news_object = News(name, id, author,country, category,description, url)
-            news_results.append(news_object)
+        news_object = News(name, id, author,country, category,description, url)
+        news_results.append(news_object)
 
     return news_results
 
