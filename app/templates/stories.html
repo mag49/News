@@ -1,0 +1,24 @@
+% extends 'base.html' %} 
+{% block content %}
+
+
+<div class="container">
+    <div class="row">
+        {% for stories in news %}
+        <div class="col-md-4">
+                <div class="thumbnail">
+                    <div class="content">
+                        <h4>{{stories.content | truncate(100)}}</h4>
+                        <a href="{{story.url}}" target="_blank"> Read Full story </a>
+                        <p>Posted on : {{story.datePublished}}</p>
+                    </div>
+                    <a>
+                    <img src="{{story.image}}" class="img-responsive" styles="height:30px">
+                    </a>
+                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock%}

@@ -50,7 +50,7 @@ def process_results(news_list):
         url = news_item.get('url')
 
         
-        news_object = News(name, id, author,country, category,description, url)
+        news_object = News(name, id, author,country, category,datePublished, content, url)
         news_results.append(news_object)
 
     return news_results
@@ -70,7 +70,7 @@ def get_stories(source_id):
 
         if get_stories_response['stories']:
             stories_results_list = get_stories_response['story']
-            stories_results = process_stories(story_results_list)
+            stories_results = process_results(story_results_list)
 
     return stories_results
 

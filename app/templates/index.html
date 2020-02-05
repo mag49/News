@@ -1,40 +1,15 @@
-{% import 'macros.html' as macro%}
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        {% if title %}
-        <title> {{ title }}</title>
-        {% else %}
-        <title> Welcome to the best Online News website </title>
-        {% endif %}
-    </head>
-    <body>
-        <!-- political news -->
-        <h3> celebrity News</h3>
-        <ul>
-            {{ macro.displayNewsList(political)}}
-        </ul>
-        <!-- General news  -->
-        <h3> General News </h3>
-        <ul>
-            {{ macro.displaynewsList(general)}}
-        </ul>
-        <!-- Agriculture news -->
-        <h3>Agriculture news</h3>
-        <ul>
-            {{ macro.displayNewsList(agriculture)}}
+{% extends 'base.html' %}
+{%import 'macros.html' as macro%}
+{% block content %}
 
-            <!-- Bussiness news -->
-        <h3>Bussiness news</h3>
-        <ul>
-            {{ macro.displayNewsList(bussiness)}}
-        </ul>
-        </ul>
-        <!-- celebrity news -->
-        <h3> celebrity News</h3>
-        <ul>
-            {{ macro.displayNewsList(celebrity)}}
-        </ul>
-    </body>
-</html>
+{{macro.displayNewsList(news)}}
+
+
+
+
+
+
+
+
+                              
+{%  endblock %}
