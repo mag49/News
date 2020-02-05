@@ -1,10 +1,25 @@
 {% macro displayNewsList(news_list) %}
 
     {% for news in news_list %}
-        <li>{{ news.name}}</li>
-        <p>{{news.author}}</p>
-        <p>{{news.content}}</p>
-        <a href="{{news.url}}">Link</a>
+    <div class="card">
+        <h1>{{ news.name}}</h1>
+        <h1>{{news.language}}</h1>
+        <h1>{{news.content}}</h1>
+        <form>
+        <a href="{{news.url}}" class="button">Link</a>
+        </form>
+        <style>
+            .card{
+                width: 800px;
+                border-right: 1px solid grey;
+                padding-bottom: 10px;
+                /* margin: 50px; */
+                padding-top:0px;
+                border-bottom: 2px solid black;
+                margin-left:400px;
+            }
+        </style>
+        </div>
     {% endfor %}
     
 {% endmacro %}
