@@ -53,7 +53,9 @@ Alternatively the application can be accessed by visiting https://melototo.herok
 
 ## Technologies Used
 -Python v3.6
+
 -Boostrap
+
 -Flask
 
 
