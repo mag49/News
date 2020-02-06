@@ -14,11 +14,11 @@ See Image description and time the news article was created.
 Click on an article and read it fully from the news source
 
 ## Specifications
-Behaviour	Input	Output
-Display news sources	On page load	List of various news sources is displayed per category
-Display articles from a news source	Click a news source	Redirected to a page with a list of articles from the source
-Display the preview of an article	On page load	Each article displays an image, title, description and publication date
-Read an entire article	Click an article	Redirected to the news source's site to read the entire article
+As a user, I would like to see various news sources on the homepage of the application.
+As a user, I would also want to select a news source and see all news articles from the selected news source in the application.
+As a user, I would want to see the image, description and the time a news article was created.
+As a user, I would want to click on an article and read the full article on the source website.
+
 ## Prerequisites
 
 You need the following to start working on the project on your local computer:
@@ -46,7 +46,7 @@ Create start.sh file and in it write the following lines:
 
 Run chmod +x start.sh follwoed by ./start.sh while in the project folder to start the project.
 Once started, the project can be accessed on your localhost using the address: localhost:5000.
-Alternatively the application can be accessed by visiting https://ppolle-news-highlights.herokuapp.com
+Alternatively the application can be accessed by visiting https://melototo.herokuapp.com/
 
 ## Technologies Used
 -Python v3.6
