@@ -28,9 +28,13 @@ You need the following to start working on the project on your local computer:
 
 A computer running on either Windows, MacOS or Ubuntu operating system installed with the following:
 -Python version 3.6
+
 -Flask
+
 -Pip
+
 -virtualenv
+
 -A text  Editor
 
 
@@ -38,7 +42,7 @@ A computer running on either Windows, MacOS or Ubuntu operating system installed
 Clone this repository to your local computer.
 Ensure you have python3.6 installed in your computer.
 From the terminal navigate to the cloned project folder.
-Create a virtual environment and access the folder via your virtual amchine.
+Create a virtual environment and access the folder.
 Visit https://newsapi.org/ and register for an API key.
 Create start.sh file and in it write the following lines:
 
